@@ -13,4 +13,10 @@ public class TestGreeting {
 		Greeting msg = new Greeting();
 		Assert.assertEquals("GOOD", msg.getStatus());
 	}
+
+	@Test
+	public void testNotNull() {
+		Greeting msg = new Greeting();
+		Assert.assertNotNull(msg.getStatus());
+	}
 }
