@@ -7,7 +7,7 @@ node {
 
 	stage 'UAT'
 	def response = input 
-		message: 'Proceed with deployment'
+		message: 'Proceed with deployment',
 		parameters: [
 			choice(
 				choices: 'Yes\nNo',
