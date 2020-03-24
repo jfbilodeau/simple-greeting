@@ -3,7 +3,7 @@ node {
 	git url: 'https://github.com/jfbilodeau/simple-greeting'
 
 	stage 'Build'
-	mvn cobertura:cobertura package
+	sh 'mvn cobertura:cobertura package'
 
 	stage 'Archive Test Results'
 	step([
