@@ -19,4 +19,14 @@ public class TestGreeting {
 		Greeting msg = new Greeting();
 		Assert.assertNotNull(msg.getStatus());
 	}
+	
+	@Test
+	public void testGetMessage() {
+		Greeting greeting = new Greeting();
+		
+		String message = greeting.getMessage("test");
+		
+		Assert.assertEquals("Hello, test and welcome!", message);
+				
+	}
 }

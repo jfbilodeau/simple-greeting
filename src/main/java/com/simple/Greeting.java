@@ -14,6 +14,14 @@ public class Greeting
        System.out.println(msg.getStatus());
     }
     
+    public String getMessage(String name) {
+    	if (name == null) {
+    		return null;
+    	} else {
+    		return String.format("Hello, %s and welcome!", name);
+    	}
+    }
+    
     public String getStatus(){
     	
     	return "GOOD";
