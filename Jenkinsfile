@@ -6,12 +6,11 @@ node {
 	sh 'mvn cobertura:cobertura'
 
 	stage 'UAT'
-	def response = input 
-		message: 'Proceed with deployment',
+	def response = input message: 'Proceed with deployment',
 		parameters: [
 			choice(
 				choices: 'Yes\nNo',
-				description: 'Choice:', 'Pass'
+				description: '', name:'Pass'
 			)
 		]
 
