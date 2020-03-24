@@ -3,8 +3,7 @@ package com.simple;
 
 
 /**
- * Generate a unique number
- *
+ * Display a greeting
  */
 public class Greeting 
 {
