@@ -16,7 +16,7 @@ public class Greeting
     
     public String getStatus(){
     	
-    	return "GOOD";
+    	return "GOODX";
     	
     }
 }
